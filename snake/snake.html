@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>星空'贪食蛇</title>
+	<style>
+		table,tr,td{
+			border:1px solid mediumpurple;
+			border-collapse: collapse;
+		}
+		td{
+			color:rebeccapurple;
+			width:22px;
+			height:22px;
+			text-align: center;
+			line-height: 22px;
+		}
+
+		.buttons{
+			position:absolute;
+			left:90px;
+			top:365px;
+			width:180px;
+			height:180px;
+			border:2px solid mediumpurple;
+		}
+		#zuo{
+			position:absolute;
+			left:0px;
+			top:60px;
+			width:60px;
+			height:60px;
+		}
+		#shang{
+			position:absolute;
+			left:60px;
+			top:0px;
+			width:60px;
+			height:60px;
+		}
+		#you{
+			position:absolute;
+			left:120px;
+			top:60px;
+			width:60px;
+			height:60px;
+		}
+		#xia{
+			position:absolute;
+			left:60px;
+			top:120px;
+			width:60px;
+			height:60px;
+		}
+		#start{
+			position:absolute;
+			left:10px;
+			top:370px;
+			width:60px;
+			height:30px;
+		}
+		#counter{
+			position:absolute;
+			left:10px;
+			top:420px;
+			width:60px;
+			height:100px;
+			border:1px solid plum;
+			text-align:center;
+			color:purple;
+		}
+		#count{
+			text-align:center;
+			color:red;
+		}
+	</style>
+</head>
+<body>
+<audio src="m1.mp3" id="m1"></audio>
+<audio src="m2.mp3" id="m2"></audio>
+<audio src="gameover.mp3" id="gameover"></audio>
+<audio src="bgm.mp3" autoplay loop></audio>
+	<table>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+
+	</table>
+
+	<div><button id="start" >开始</button></div>
+	<div id="counter">
+		<p>计数君</p>
+		<p id="count">0</p>
+	</div>
+	<div class="buttons">
+		<button id="zuo"> ← </button>
+		<button id="shang"> ↑ </button>
+		<button id="you"> → </button>
+		<button id="xia"> ↓ </button>
+	</div>
+  <script src="./snake.js"></script>
+</body>
+</html>
