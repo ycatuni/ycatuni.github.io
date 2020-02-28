@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>今天吃什么</title>
+    <style>
+        .text{
+            position:relative;
+            width: 500px;
+            height: 140px;
+            border: 10px solid #ccc;
+            margin: 50px auto;
+            font: bold 120px "SimSun";
+            text-align: center;
+            }
+    </style>
 </head>
 <body>
-    <script type="text/javascript">    
-        var items=["鲍鱼饭","佛跳墙","肠粉","麻辣烫","冒菜","火锅","馄饨","饺子","汤粉","螺蛳粉","肉蟹煲","桂林米粉","麻辣香锅","干锅鸡","川菜","茶餐厅","猪脚饭","烧腊饭","煲仔饭","湘菜","早茶","砂锅粥","鸡煲","汤饭","花甲粉","串串","酸菜鱼","冬阴功汤","炒饭","KFC","麦当劳","炸排骨","鸡翅尖","海南鸡饭","披萨","棒棒鸡","龙虾饭","拉面","生煎包"];
-        var randomItem=items[Math.floor(Math.random() * items.length)];
-        console.log(randomItem);
-        document.write(randomItem);
-    </script>
+    <div class="text">
+        <script type="text/javascript">    
+            var items=["鲍鱼饭","佛跳墙","肠粉","麻辣烫","冒菜","火锅","馄饨","饺子","汤粉","螺蛳粉","肉蟹煲","桂林米粉","麻辣香锅","干锅鸡","川菜","茶餐厅","猪脚饭","烧腊饭","煲仔饭","湘菜","早茶","砂锅粥","鸡煲","汤饭","花甲粉","串串","酸菜鱼","冬阴功汤","炒饭","KFC","麦当劳","炸排骨","鸡翅尖","海南鸡饭","披萨","棒棒鸡","龙虾饭","拉面","生煎包"];
+            var randomItem=items[Math.floor(Math.random() * items.length)];
+            console.log(randomItem);
+            document.write(randomItem);
+        </script>
+    </div>
 </body>
 </html>
